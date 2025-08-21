@@ -8,7 +8,7 @@ import OpenAI from "openai";
 dotenv.config();
 const app = express();
 import cors from "cors";
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://transcription-ik2e.vercel.app" }));
 
 const storage = multer.diskStorage({
   destination: "uploads/",
