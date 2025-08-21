@@ -3,7 +3,7 @@ export async function transcribeAudio(audioBlob: Blob): Promise<string> {
   const formData = new FormData();
   formData.append('audio', audioBlob, 'audio.webm');
 
-  const response = await fetch('http://localhost:3001/transcribe', {
+  const response = await fetch('https://transcription-izyn.onrender.com/transcribe', {
     method: 'POST',
     body: formData
   });

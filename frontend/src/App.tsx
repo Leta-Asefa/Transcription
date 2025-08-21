@@ -10,8 +10,8 @@ import {
 import ClientList from "./components/ClientList";
 import AudioRecorder from "./components/AudioRecorder";
 import TranscriptionForm from "./components/TranscriptionForm";
-import { transcribeAudio } from "./components/WhisperAPI";
-import { saveNote, loadNote } from "./components/NotesStorage";
+import { transcribeAudio } from "./lib/WhisperAPI";
+import { saveNote, loadNote } from "./lib/NotesStorage";
 import { Toaster, toast } from "sonner";
 
 export default function App() {
